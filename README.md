@@ -1,9 +1,28 @@
 # textSimilarity
 
-#####Running the code
+What are the requirements?
+The focus was on having some fun and to use only the standard libraries for better understanding of the concepts.The document similarity algorithm does not need to perform well, and you doesn't need to account for all edge cases.
+Examples of libraries that CANNOT be used:
+-scikit-learn
+-NLTK
+-spaCy
+-numpy
 
-The code here takes two texts and compare them to give a similarity score
+#########################
+The code here takes two texts and compare them to give a similarity score.
 
+The objective was to write a program that takes as inputs two texts and uses a metric to determine how similar they are. Documents that are exactly the same should get a score of 1, and documents that don’t have any words in common should get a score of 0.
+
+A number of decisions were made to come up with this solution:
+
+-Do you count punctuation or only words?
+-Which words should matter in the similarity comparison?
+-Do you care about the ordering of words?
+-What metric do you use to assign a numerical value to the similarity?
+-What type of data structures should be used?
+
+#############################
+Running the code:
 The code can be run in two ways:
 1. python textSimilarity.py -text1 "Hello" -text2 "Hello there"
 
